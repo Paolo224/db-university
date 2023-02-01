@@ -1,0 +1,5 @@
+<-- DA QUANTI DIPARTIMENTI è COMPOSTA L'UNIVERSITA -->
+
+SELECT COUNT(*) 
+FROM `departments` 
+WHERE `id`;
