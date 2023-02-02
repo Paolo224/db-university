@@ -1,0 +1,9 @@
+<-- SELEZIONARE TUTTI GLI STUDENTI CON I DATI RELATIVI AL CORSO DI LAUREA A CUI SONO ISCRITTI E IL RELATIVO DIPARTIMENTO, IN ORDINE ALFABETICO PER COGNOME E NOME -->
+
+SELECT  `students`.`surname` AS `cognome_studente`, `students`.`name` AS `nome_studente`, `degrees`.`name` AS `nome_corso_di_laurea`,`degrees`.`level`, `degrees`.`address`,  `departments`.`name` AS `nome_dipartimento`
+FROM `students` 
+JOIN `degrees`
+ON `students`.`degree_id` = `degrees`.`id`
+JOIN `departments`
+ON `degrees`.`department_id` = `departments`.`id`
+ORDER BY `students`.`surname`, `students`.`name`;
