@@ -1,0 +1,7 @@
+<-- SELEZIONARE TUTTI GLI STUDENTI ISCRITTI AL CORSO DI LAUREA IN ECONOMIA -->
+
+SELECT `students`.`name`,`students`.`surname`, `degrees`.`name`
+FROM `students` 
+JOIN `degrees`
+ON `students`.`degree_id` = `degrees`.`id`
+WHERE `degrees`.`name` = 'Corso di laurea in Economia';
