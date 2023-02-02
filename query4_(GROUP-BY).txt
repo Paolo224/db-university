@@ -1,0 +1,5 @@
+<-- CONTARE QUANTI CORSI DI LAUREA CI SONO PER OGNI DIPARTIMENTO -->
+
+SELECT COUNT(`department_id`), `department_id`
+FROM `degrees`
+GROUP BY `department_id`;

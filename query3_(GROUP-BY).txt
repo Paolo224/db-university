@@ -1,0 +1,5 @@
+<-- CALCOLARE LA MEDIA DEI VOTI DI OGNI APPELLO DI ESAME -->
+
+SELECT `exam_id`, AVG(`vote`) AS media 
+FROM `exam_student` 
+GROUP BY `exam_id`;
